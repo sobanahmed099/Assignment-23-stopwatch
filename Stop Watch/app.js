@@ -38,7 +38,7 @@ function run(){
 function updateDisplay() {
   var d = days < 10 ? "0" + days : days;
   var h = hours < 10 ? "0" + hours : hours;
-  var m = minutes < 10 ? "0" + minutes : minutes;
+  var m = mintues < 10 ? "0" + mintues : mintues;
   var s = seconds < 10 ? "0" + seconds : seconds;
 
 
@@ -49,13 +49,13 @@ function updateDisplay() {
 function stop() {
   clearInterval(timer);
   timer = null;
-  
+
 }
 
 function reset() {
   stop();
   seconds = 0;
-  minutes = 0;
+  mintues = 0;
   hours = 0;
   days = 0;
   updateDisplay();
